@@ -158,6 +158,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+logs/
+dbt_packages/
 
 # Spyder project settings
 .spyderproject
