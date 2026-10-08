@@ -1,0 +1,4 @@
+Pentru prima interogare :
+streamlit/streamlit 17183 17116
+pandas-dev/pandas 67519 67519
+microsoft/Powertoys 50719 50719
