@@ -1,0 +1,15 @@
+ticket_analytics:
+  target: dev
+  outputs:
+    dev: &bq
+      type: bigquery
+      method: oauth
+      project: "{{ env_var('GCP_PROJECT_ID', 'ticket-analytics-510811') }}"
+      dataset: dbt_dev
+      location: EU
+      threads: 4
+      job_execution_timeout_seconds: 300
+      maximum_bytes_billed: 10000000000
+    prod:
+      <<: *bq
+      dataset: analytics
